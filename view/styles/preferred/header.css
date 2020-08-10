@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+@media screen, print
+{
+	div.header
+	{
+		display : block;
+		margin : 0;
+		padding : 0;
+	}
+	
+	.headerImage
+	{
+		border-style : none;
+		float : right;
+		margin : 0px;
+		padding: 0;
+	}
+	
+	/* For IE6 3px bug... the Tan Hack in use */
+	/* Hides from IE5-mac \*/
+	* html .headerImage 
+	{
+		margin-left : -3px;
+		margin-right : -3px;
+	}
+	/* End hide from IE5-mac */
+	
+	div.headerBar1
+	{
+		border-bottom : solid 1px white;
+		font-size: 1px;
+		height : 24px;
+		line-height: 1px;
+		margin : 0;
+		padding : 0;
+	}
+
+	/* For IE6 border bug... the Tan Hack in use */
+	/* Hides from IE5-mac \*/
+	* html div.headerBar1 
+	{
+		height : 25px;
+	}
+	/* End hide from IE5-mac */
+
+	div.headerBar2
+	{
+		border-bottom : solid 1px white;
+		height : 55px;
+		margin : 0;
+		padding : 0;
+	}
+
+	/* For IE6 border bug... the Tan Hack in use */
+	/* Hides from IE5-mac \*/
+	* html div.headerBar2 
+	{
+		height : 56px;
+	}
+	/* End hide from IE5-mac */
+	
+	table.pageTitle
+	{
+		border : none;
+		height : 100%;
+		vertical-align : middle;
+	}
+
+	table.pageTitle td
+	{
+		color: white;
+		font-family: Helvetica, Arial, sans-serif;
+		font-weight: bold;
+		font-size: 20px;
+		font-variant: small-caps;
+		padding : 0;
+		padding-left : 1.5em;
+		white-space : nowrap;
+	}
+}

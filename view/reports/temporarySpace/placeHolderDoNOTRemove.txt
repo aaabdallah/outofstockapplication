@@ -1,0 +1,4 @@
+This file is here simply to force IBM Websphere to create this nearly empty directory 
+as part of the deployed WAR file. This directory is the default location for temporary
+files that are generated as part of the reports (Excel spreadsheet copies of the
+reports, and trend charts).

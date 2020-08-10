@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+@import "crumbs.css";
+@import "header.css";
+@import "footer.css";
+@import "forms.css";
+@import "reports.css";
+
+@media screen, print
+{
+	div.container /* ie6 */
+	{
+		bottom : 0px;
+		display : block;
+		height : auto;
+		margin-left : auto;
+		margin-right : auto;
+		padding : 0;
+		top : 0px;
+		background-color: #CED0CF;
+		font-family: Verdana, sans-serif;
+		font-size: x-small;
+	}
+	
+	div.mainContent
+	{
+		/* border : solid 1px blue; */
+		display : block;
+		padding : 20px;
+	}
+	
+	div.mainContent p
+	{
+		/* border : solid 1px red; */
+		/* Make the margins smaller than usual because of limited portlet space */
+		margin: 0em 0em 0.5em 0em;
+	}
+	
+	.borderBackground
+	{
+		background-color: #CC0001;
+	}
+
+	.titleBackground
+	{
+		background-color: #959B99;
+	}
+}

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<portlet-app 
+	xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd" version="1.0" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd">
+
+	<portlet>
+		<description>Bottling Company Enterprises Out Of Stock Report Portlet</description>
+		<portlet-name>CCEOutOfStockReportPortlet</portlet-name>
+		<display-name>CCE Out of Stock Report Portlet</display-name>
+		<portlet-class>net.btlcpy.outofstock.portlets.CCEOutOfStockReportPortlet</portlet-class>
+
+		<init-param>
+			<!-- IF THE FOLLOWING PARAMETER IS CHANGED, BE SURE TO CHANGE IT FOR THE ADMINISTRATION PORTLET AS WELL -->
+			<name>jndiDBName</name>
+			<!-- <value>jdbc/outOfStockDB</value> -->
+			<!-- <value>jdbc/developmentDB</value> -->
+			<value>jdbc/outOfStockDB</value>
+		</init-param>
+		<init-param>
+			<!-- IF THE FOLLOWING PARAMETER IS CHANGED, BE SURE TO CHANGE IT FOR THE ADMINISTRATION PORTLET AS WELL -->
+			<name>loggerConfiguration</name>
+			<!-- The path of the configuration file should be relative to the context root -->
+			<value>/WEB-INF/classes/net/btlcpy/outofstock/resources/loggerConfiguration.lcf</value>
+		</init-param>
+
+		<expiration-cache>-1</expiration-cache>
+
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		
+		<supported-locale>en</supported-locale>
+	
+		<portlet-info>
+			<!-- <title>CCE Out of Stock Report Portlet (DEVELOPMENT)</title> -->
+			<!-- <title>CCE Out of Stock Report Portlet</title> -->
+			<title>CCE Out of Stock Report Portlet</title>
+			<short-title>CCE-OOS Report Portlet</short-title>
+		</portlet-info>
+	</portlet>
+
+	<portlet>
+		<description>Bottling Company Enterprises Out Of Stock Administration Portlet</description>
+		<portlet-name>CCEOutOfStockAdministrationPortlet</portlet-name>
+		<display-name>CCE Out of Stock Administration Portlet</display-name>
+		<portlet-class>net.btlcpy.outofstock.portlets.CCEOutOfStockAdministrationPortlet</portlet-class>
+
+		<init-param>
+			<!-- IF THE FOLLOWING PARAMETER IS CHANGED, BE SURE TO CHANGE IT FOR THE REPORT PORTLET AS WELL -->
+			<name>jndiDBName</name>
+			<!-- <value>jdbc/outOfStockDB</value> -->
+			<!-- <value>jdbc/developmentDB</value> -->
+			<value>jdbc/outOfStockDB</value>
+		</init-param>
+		<init-param>
+			<!-- IF THE FOLLOWING PARAMETER IS CHANGED, BE SURE TO CHANGE IT FOR THE REPORT PORTLET AS WELL -->
+			<name>loggerConfiguration</name>
+			<!-- The path of the configuration file should be relative to the context root -->
+			<value>/WEB-INF/classes/net/btlcpy/outofstock/resources/loggerConfiguration.lcf</value>
+		</init-param>
+
+		<expiration-cache>-1</expiration-cache>
+		
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+		</supports>
+		
+		<supported-locale>en</supported-locale>
+	
+		<portlet-info>
+			<!-- <title>CCE Out of Stock Administration Portlet (DEVELOPMENT)</title> -->
+			<!-- <title>CCE Out of Stock Administration Portlet</title> -->
+			<title>CCE Out of Stock Administration Portlet</title>
+			<short-title>CCE-OOS Admin Portlet</short-title>
+		</portlet-info>
+	</portlet>
+
+</port﻿﻿﻿let-app>

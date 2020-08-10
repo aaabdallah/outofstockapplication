@@ -1,0 +1,135 @@
+@import url(crumbs.css);
+
+body
+{
+}
+
+.content
+{
+	background-color: #CED0CF;
+	font-family: Verdana, sans-serif;
+	font-size: x-small;
+}
+
+.headerImage
+{
+	float: right;
+	margin: 0;
+	padding: 0;
+	border-style: none;
+}
+
+.solidBar
+{
+	line-height: 1px;
+	font-size: 1px;
+	margin: 0;
+	padding: 0;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: white;
+}
+
+.thinBar
+{
+	height: 1px;
+	background-color: white;
+}
+
+.borderBackground
+{
+	background-color: #CC0001;
+}
+
+.titleBackground
+{
+	background-color: #959B99;
+}
+
+.mainBackground
+{
+	background-color: #CED0CF;
+}
+
+.pageTitle
+{
+	color: white;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	font-variant: small-caps;
+
+	position: absolute;
+	z-index: 111;
+	left: 70px;
+	top: 54px;
+}
+
+.controlGroup
+{
+	border: 1px solid white; 
+}
+
+.button
+{
+	color: white;
+	background-color: #336799;
+	border-style: none;
+}
+
+.footerNotice
+{
+	background-color: white;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	font-size: xx-small;
+}
+
+.breadcrumbs
+{
+	position: absolute;
+	z-index: 107;
+	left: 70px;
+	top: 77px;
+	
+	font-size: xx-small;
+	font-family: Verdana;
+}
+
+.headerBar0
+{
+	height: 25px;
+}
+
+.headerBar1
+{
+	height: 56px;
+}
+
+.footerBar0
+{
+	height: 1px;
+}
+
+.footerBar1
+{
+ 	height: 10px;
+}
+
+.footerBar2
+{
+ 	height: 20px;
+}
+
+.mainButton
+{
+	width: 260px;
+	height: 55px;
+	margin: 16px;
+	color: white;
+	background-color: #CC0000;
+	font-size: 12pt;
+	font-weight: bold;
+	border: 1px solid white;
+}

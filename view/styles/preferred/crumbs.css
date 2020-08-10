@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+@media screen, print
+{
+	.breadcrumbs
+	{
+		color : black;
+		font-size: xx-small;
+		font-family: Verdana;
+		font-weight : normal;
+		font-variant : normal;
+		text-decoration : none;
+	}
+	
+	.breadcrumbs a
+	{
+	    color: #013DA4;
+	    font-weight: bold;
+	}
+	
+	.breadcrumbs a:hover
+	{
+		color: #FF3300;
+		text-decoration : underline;
+	}
+
+	
+	/*a.breadcrumbs, a.breadcrumbs:visited, a.breadcrumbs:link
+	{
+		font-size: 0.9em; 
+	}*/
+	
+	a.breadcrumbs:hover
+	{
+	    text-decoration: underline;
+	}
+}

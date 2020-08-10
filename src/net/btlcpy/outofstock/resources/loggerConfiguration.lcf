@@ -1,0 +1,8 @@
+# initialise main logger with level TRACE
+log4j.logger.net.btlcpy.outofstock.loggers.MainLog=TRACE, MainLogger
+
+# add a ConsoleAppender to the logger MainLogger
+log4j.appender.MainLogger=org.apache.log4j.ConsoleAppender
+
+# set set that layout to be SimpleLayout
+log4j.appender.MainLogger.layout=org.apache.log4j.SimpleLayout

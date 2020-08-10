@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@media screen, print
+{
+	div.footerBar1
+	{
+		border-top : solid 1px white;
+		font-size: 1px;
+		height : 10px;
+		line-height: 1px;
+		margin : 0;
+		padding : 0;
+	}
+
+	/* For IE6 border bug... the Tan Hack in use */
+	/* Hides from IE5-mac \*/
+	* html div.footerBar1 
+	{
+		height : 11px;
+	}
+	/* End hide from IE5-mac */
+
+	div.footerBar2
+	{
+		border-top : solid 1px white;
+		font-size: 1px;
+		height : 20px;
+		line-height: 1px;
+		margin : 0;
+		padding : 0;
+	}
+
+	/* For IE6 border bug... the Tan Hack in use */
+	/* Hides from IE5-mac \*/
+	* html div.footerBar2 
+	{
+		height : 21px;
+	}
+	/* End hide from IE5-mac */
+	
+	div.footerNotice
+	{
+		background-color: white;
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		font-size: xx-small;
+	}
+}

@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+@media screen, print
+{
+	/* Report parameter description styles */
+	.parametersTableA
+	{
+		border-collapse: collapse;
+		margin : 0px 0px 20px 0px;
+	}
+	
+	.parametersHeadingRowA
+	{
+	}
+	
+	.parametersHeadingCellA
+	{
+		font-family: Verdana, sans-serif;
+		font-size: x-small;
+		font-style : italic;
+		font-weight: bold;
+		padding : 0em 0em;
+
+	}
+	
+	.parametersDataRowA
+	{
+	}
+	
+	.parametersDataCellA
+	{
+		font-size: x-small;
+		font-style: italic;
+		padding-left : 1em;
+		padding-right : 1em;
+		vertical-align: top;
+	}
+
+	/* Actual report styles */
+	.reportTableA
+	{
+		background-color: white;
+		border : 1px solid black;
+		border-collapse: collapse;
+		border-spacing : 0px;
+		margin : 10px;
+	}
+	
+	.reportHeadingRowA
+	{
+		background-color : black;
+	}
+	
+	.reportHeadingCellA /*, .reportHeadingCellA a, .reportHeadingCellA a:visited*/
+	{
+		border : solid 1px black;
+		color : yellow;
+		font-family: Verdana, sans-serif;
+		font-size: x-small;
+		font-weight: bold;
+		padding : 0em 1em;
+		text-align :center;
+		line-height : 1.5em;
+		white-space: nowrap;
+	}
+	
+	.reportHeadingCellA a, .reportHeadingCellA a:visited
+	{
+		color : yellow;
+		text-decoration: underline;
+	}
+	
+	.whiteBackground
+	{
+		background-color : white;
+	}
+	
+	.topAligned
+	{
+		vertical-align : top;
+	}
+	
+	.reportDataRowA1
+	{
+		background-color : white;
+		color : black;
+	}
+	
+	.reportDataRowA2
+	{
+		background-color : #DDDDFF;
+		color : black;
+	}
+	
+	.reportDataCellA
+	{
+		border : 1px solid black;
+		font-family: Verdana, sans-serif;
+		font-size: x-small;
+		padding : 0em 1em;
+	}
+	
+	/* one column tables (lists) within data cells */
+	.reportDataCellListA
+	{
+	}
+	
+	.reportDataCellListRowA
+	{
+	}
+	
+	.reportDataCellListElementA
+	{
+		font-size: x-small;
+		padding : 0em 0em;
+		white-space : nowrap;
+	}
+
+	.numericDataCell
+	{
+		font-weight : bold;
+		margin-right : 0px;
+		margin-left : auto;
+		text-align : right;
+	}
+
+	.numericDataCell table
+	{
+		font-weight : bold;
+		margin-right : 0px;
+		margin-left : auto;
+		text-align : right;
+	}
+
+	.bottlerDataCell
+	{
+		background-color : red;
+		border : solid 1px black;
+		color : white;
+		font-family: Verdana, sans-serif;
+		font-size: x-small;
+		padding : 0em 1em;
+	}
+
+	.bottlerDataSubCell
+	{
+		color : white;
+		font-family: Verdana, sans-serif;
+		font-size: x-small;
+		padding : 0em 1em;
+		text-align : right;
+	}
+
+	.distributorDataCell
+	{
+		background-color : gray;
+		border : solid 1px black;
+		font-family: Verdana, sans-serif;
+		font-size: x-small;
+		padding : 0em 1em;
+	}
+
+	.distributorDataSubCell
+	{
+		color : black;
+		font-family: Verdana, sans-serif;
+		font-size: x-small;
+		padding : 0em 1em;
+		text-align : right;
+	}
+}

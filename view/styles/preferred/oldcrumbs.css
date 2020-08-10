@@ -1,0 +1,92 @@
+body
+{
+}
+
+/*****************************************************
+General Anchors
+*****************************************************/
+a, a:visited, a:link /* General page anchors */
+{
+    color: #013DA4;
+    text-decoration: none;
+}
+
+a:Hover /* General page anchors */
+{
+	color: #FF3300;
+    text-decoration: underline;
+}
+
+a.linkSmallBold, a.linkMenuSink 
+{
+    font-weight: bold;
+}
+
+a.linkSmall, a.LinkSmallBold, a.linkMenuSink
+{
+    color: navy;
+    font-size: 0.7em;
+}
+
+a.linkSmallBold:visited, a.linkMenuSink:visited
+{
+    color: #013DA4;
+}
+
+a.linkSmallBold:Hover, a.linkMenuSink:Hover
+{
+/*	color: #DD6900;	*/
+    color: #FF3300;
+}
+
+a.lnk3, a.lnk3:visited, a.lnk3:link /* Active/Unanswered, name of forum underneath table */
+{
+	font-size: 0.9em; 
+    font-weight: bold;
+    color: #013DA4;
+}
+
+a.lnk3:Hover
+{
+    color: #FF3300;
+    text-decoration: underline;
+}
+
+/*****************************************************
+Text and links used in ForumGroupRepeater and ForumRepeater
+*****************************************************/
+columnText, a.columnText, a.columnText:visited, a.columnText:link 
+{ 	
+	font-size: 0.7em; 
+	color: white; 
+	font-weight:bold;
+}
+
+a.columnText:hover
+{
+	color: #FF3300;	
+}
+
+a.column:visited, a.column:link, a.column:hover
+{
+    color: white;
+    font-weight:bold;
+}
+
+.flnk3
+{
+    font-weight: bold;
+    color: #013DA4;
+}
+
+a.flnk3:visited, a.flnk3:link
+{
+    font-weight: bold;
+    color: #013DA4;
+}
+
+a.flnk3:hover
+{
+    color: #FF3300;
+}
+

@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+@media screen, print
+{
+	/***** Main Form *****/
+	form.formStyle1
+	{
+		border : solid 1px white;
+		margin : 0;
+		padding : 10px;
+	}
+	
+	.formTable
+	{
+		width : 100%;
+	}
+	
+	/* For IE6 width bug... the Tan Hack in use */
+	/* Hides from IE5-mac \*/
+	* html form.formStyle1 
+	{
+		width : 100%;
+	}
+	/* End hide from IE5-mac */
+
+	input.mainButton
+	{
+		width: 260px;
+		height: 55px;
+		margin: 16px;
+		color: white;
+		background-color: #CC0000;
+		font-size: 12pt;
+		font-weight: bold;
+		border: 1px solid white;
+	}
+
+	.formLabel1
+	{
+		font-family: Verdana, sans-serif;
+		font-size: x-small;
+	}
+	
+	.formLabel2
+	{
+		font-family: Verdana, sans-serif;
+		font-size: x-small;
+	}
+	
+	.formLabelCell
+	{
+		padding-top : 2em;
+	}
+	
+	.formIndented
+	{
+		padding-left : 1.5em;
+	}
+	
+	input.formButton1
+	{
+		color: white;
+		background-color: #336799;
+		border-style: none;
+	}
+	
+	.intervalDisplay
+	{
+		background-color : white;
+		padding-bottom : 1em;
+		padding-left : 2em;
+		padding-right : 2em;
+		padding-top : 1em;
+	}
+	
+	.noDisplay 
+	{
+		display : none;
+	}
+}

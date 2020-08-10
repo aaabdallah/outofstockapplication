@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="Bottling Company Enterprises Out Of Stock Portlets Application" 
+	default="buildWar" 
+	basedir="C:/Documents and Settings/Abu Abd-Allah/My Documents/Data/Real Estate Project/workspace/OutOfStockApplication">
+
+	<description>
+	Build file for the Bottling Company Enterprises Out Of Stock Portlets Application
+	</description>
+
+	<!-- ****************************************************************** -->
+	<property name="s1as.dir" location="C:/Sun/AppSrvr"/>
+	<property name="s1as.deploy.dir" location="${s1as.dir}/domains/domain1/autodeploy"/>
+	<property name="s1as.lib.dir" location="${s1as.dir}/lib"/>
+	
+	<property name="src.dir" location="${basedir}/src"/>
+	<property name="bin.dir" location="${basedir}/bin"/>
+	<property name="build.dir" location="${basedir}/build"/>
+	<property name="conf.dir" location="${basedir}/conf"/>
+
+	<!-- Set up the general project classpath -->
+	<path id="build.classpath">
+		<fileset dir="${s1as.lib.dir}">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+
+	<!-- ****************************************************************** -->
+	<target name="buildWar">
+		<delete quiet="true" file="${build.dir}/OutOfStockApplication.war"/>
+		<javac srcdir="${src.dir}" destdir="${bin.dir}" classpath="${build.classpath}"/>
+		<war destfile="${build.dir}/OutOfStockApplication.war" 
+			webxml="conf/WEB-INF/web.xml">
+			<classes dir="bin"/>
+			<lib dir="lib"/>
+			<fileset dir="conf">
+			    <include name="WEB-INF/sun-web.xml"/>
+				<include name="WEB-INF/portlet.xml"/>
+			</fileset>
+			<fileset dir="view"/>
+		</war>
+		<!-- <antcall target="zipAll"/> -->
+		<!-- <copy file="${build.dir}/OutOfStockApplication.war" todir="${s1as.deploy.dir}"/> -->
+		<copy file="${build.dir}/OutOfStockApplication.war" tofile="${build.dir}/CCEOutOfStockPortlets.war"/>
+	</target>
+
+	<!-- ****************************************************************** -->
+	<!-- target to force redeployment of the WAR -->
+	<target name="deployWar" depends="buildWar">
+		<delete quiet="true" file="${s1as.deploy.dir}/OutOfStockApplication.war"/>
+		<copy file="${build.dir}/OutOfStockApplication.war" todir="${s1as.deploy.dir}"/>
+	</target>
+
+	<!-- ****************************************************************** -->
+	<target name="zipAll">
+		<delete quiet="true" file="${build.dir}/OutOfStockApplication.zip"/>
+		<zip update="true" destfile="${build.dir}/OutOfStockApplication.zip" basedir="."/>
+	</target>
+</project>
